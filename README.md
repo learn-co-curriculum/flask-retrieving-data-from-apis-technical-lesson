@@ -40,6 +40,10 @@ You are working to build an app where users can search for books and look up inf
 
 ### Task 2: Determine the Design
 
+Review API docs and familiarize yourself with how the data is structured. Focus on what data you need to determine what endpoints you’ll need.
+
+We’ll use: "https://openlibrary.org/search.json" with query parameters for title, fields, and limit.
+
 ### Task 3: Develop, Test, and Refine the Code 
 
 #### Step 1: Create a Feature Branch
@@ -137,7 +141,7 @@ class Search:
         response = requests.get(URL)
         return response.json()
 
-results_json = Search().get_search_results_json()
+results_json = Search().get_search_results()
 print(json.dumps(results_json, indent=1))
 ```
 
@@ -166,7 +170,7 @@ class Search:
         return response_formatted
 
 search_term = input("Enter a book title: ")
-result = Search().get_user_search_results(search_term)
+result = Search().get_search_results(search_term)
 print("Search Result:\n")
 print(result)
 ```
