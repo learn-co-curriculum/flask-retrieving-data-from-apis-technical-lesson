@@ -118,7 +118,7 @@ print(results)
 b'{\n    "numFound": 522,\n    "start": 0,\n    "numFoundExact": true,\n    "docs": [\n        {\n            "title": "The Lord of the Rings",\n            "author_name": [\n                "J.R.R. Tolkien"\n            ]\n        }\n    ],\n    "num_found": 522,\n    "q": "",\n    "offset": null\n}'
 ```
 
-* Let's write a method called ```get_search_results_json``` that returns the response formatted as JSON! To do this we need to apply a ```.json()``` method to our data to get it to an easier to use and see state.
+* Let's update our method called ```get_search_results``` that returns the response formatted as JSON! To do this we need to apply a ```.json()``` method to our data to get it to an easier to use and see state.
 
 ```python
 import requests
