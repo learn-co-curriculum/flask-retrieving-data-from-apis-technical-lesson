@@ -8,6 +8,7 @@ requests = "==2.28.1"
 importlib-metadata = "6.0.0"
 importlib-resources = "5.10.0"
 Werkzeug = "2.3.7"
+flask = "*"
 
 [dev-packages]
 
